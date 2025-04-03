@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width, height;
+            transition-duration: 1.0s;
+            transition-timing-function: ease;
+        }
+
+        .square:hover{
+            width:200px;
+            height: 200px;
+        }
+
+        .button{
+            color: black;
+            transition-property: color;
+            transition-duration: 2.0s;
+            transition-timing-function: ease;
+        }
+
+        .button:hover{
+            color:red;
+        }
+
+        .image{
+            width: 300px;
+        }
+
+        .image:hover{
+            transform:rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <hr>
+    <button class="button">Hover me</button>
+    <hr>
+    <img class="image" src ="춘식.webp">
+    
+</body>
+</html>

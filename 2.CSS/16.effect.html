@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            background:black;
+
+        }
+
+        .sparkle{
+            position: absolute;
+            width:20px;
+            height:20px;
+            background: radical-gradient(circle, #ffffff, rgb(255,255,255,0));
+            border-radius: 50%;
+            animation:fadeOut Is forwards;
+
+        }
+
+        @keyframes fadeOut{
+            0%{
+                opacity:1;
+                transform:scale(1);
+            }
+            100%{
+                opacity:0;
+                transform:scale(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sparkle"></div>
+    <script>
+        document.addEventListener('mousmove',(e)=>{
+
+            const sparkle = document.createElement('div');
+            sparkle.className='sparkle';
+
+            sparkle.style.left = '$(e.pageX)px';
+            sparkle.style.top= 'S'
+        })
+
+
+    </script>
+    
+</body>
+</html>
