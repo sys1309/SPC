@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #progressBar{
+            width: 50%;
+            background-color:grey;
+        }
+
+        #progress{
+            width:0%;
+            height:30px;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>프로그래스바(타이머)</h1>
+    <input type="number" id = "timeInput" placeholder="초 입력" min="1">
+    <button id = "startButton">시작</button>
+    <button id = "resetButton">리셋</button>
+
+    <div id = "progressBar">
+        <div id ="progress"></div>
+    </div>
+
+    <script>
+        //타이머 구현, 초를 읽어서 등분, 1초마다 기다리면서, 진척도를 표시
+        const timeInput = document.getElementById("timeInput");
+        const progressBar = document.getElementById("progress");
+
+        let duration = 0; 
+        //console.log(timeInput)
+
+        function startProgress(){
+            duration = Number(timeInput.value);
+
+            let timePassed =0; //경과된 시간
+
+            setInterval(function() {
+                timePassed++;
+
+                let progress = (timePassed/duration)*100;
+
+                progressBar.style.width = `$(progress)%`;
+                
+            },1000);
+        }
+
+        //미션2. reset 버튼 구현하기(숙제)
+        // 2-1. rest 누르면 타이머 멈추기
+        // 2-2 
+    </script>
+    
+</body>
+</html>

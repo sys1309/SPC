@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>화면 리프레쉬 예제</h1>
+    <p>이 페이지는 3초후에 리프레쉬 됩니다.</p>
+
+    <script>
+        window.onload = function(){
+            //3초 있닥다 실행 
+            //setTimeout(콜백함수, 3000); // 3000ms = 3s
+
+            function displayText(){
+                console.log("3ch rlekfuTdma!!");
+            }
+
+            setTimeout(displayText, 3000);
+
+            setTimeout (function() {
+                console.log("3초 기다렸습니다.");
+            },5000);
+
+            console.log("나는안기다림")
+
+            }
+        
+    </script>
+    
+</body>
+</html>

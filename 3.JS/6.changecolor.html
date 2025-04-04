@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeColor()">배경색상변경</button>
+    <button onclick="randomColor()">랜덤배경색상변경</button>
+    <script>
+        var colors = ["red","blue","green"]
+        var currentIndex =0;
+
+        function randomColor(){
+            document.body.style.backgroundColor = '#'+Math.floor(Math.random()*1677215).toString(16).padStart(6,'0');
+        }
+
+        function changeColor(){
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex++;
+            //document.body.style.backgroundColor = colors[currentIndex];
+            // if (currentIndex >= colors.length) {
+            //     currentIndex = 0; // 다시 처음으로 순환
+
+            // }
+            //currentIndex = currentIndex%3; //하드코딩 유연하지 않아서 버그유발하기 쉬움 
+            currentIndex = currentIndex%colors.length; //변수로 넣어주는게 좋음 
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>도큐먼트에 자바스크립트로 내용 출력하기</h1>
+    <p id="mytext">여기에 본문</p>
+    <p class="text">여기에 본문</p>
+    <p class="text">여기에 본문</p>
+    <script>
+        console.log("hello??");
+        //const mytext = document.getElementById("mytext");
+        //const mytext = document.getElementsByClassName("text");
+        const mytext = document.getElementsByTagName("p");
+
+        console.log(mytext[2]);
+        mytext[2].innerText = "Hello JS"
+    </script>
+    
+</body>
+</html>
