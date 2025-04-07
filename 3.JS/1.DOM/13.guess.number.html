@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>숫자 맞추기 게임</h1>
+    <h2>1~100까지의 숫자 맞추기...</h2>
+    <input type="number" id="guessnumber" placeholder="숫자를 입력하시오">
+    <button id = "guessButton">Guess</button>
+    <p id="result"></p>
+    <ol id="history"></ol>
+
+    <script>
+        //미션1 랜덤숫자를 만들고 기억해둔다.
+        //      힌트: Math.random() <----위의 범위내의 숫자가 생성
+        // let <-- 생성후 변경되는 변수 
+        // const <-- 생성되면 안바뀌는 변수 
+        const randomnumber = Math.floor(Math.random()*100)+1;
+        // console.log(randomnumber);
+
+        const userInput = document.getElementById("guessnumber");
+        const result = document.getElementById("result");
+        const history = document.getElementById("history")
+        // console.log(userinput);
+        
+        function checkUserInput() {
+            const userInputValue = Number(userInput.value);
+            console.log("사용자 입력:", userInput.value);
+
+            if (userInputValue < randomnumber) {
+                resultText = ("숫자가 작음")
+                //result.innerHTML = "<B>숫자가 작음</B>"; //이 부분을 주석처리하면 append가 됨 
+            } else if (userInputValue > randomnumber) {
+                console.log("숫자가 큼")
+                //result.innerText = "숫자가 작음";
+
+            } else {
+                resultText ="정답"
+                console.log(resultText)
+                result.innerHTML = `<B style = "color:red">축하합니다. 정답입니다.</B>`;
+
+            }
+            console.log(resultText) //중복된 구문이라서 밖으로 빼줌 (리팩토링)
+
+            const userInput= document.getElementByID("guessnumber")
+            console.log(userInput)
+
+            const newResult = document.createElement("li")
+            newResult.innerHTML = "사용자입력:" + userInputValue+","+result.innerHTML;
+            console.log(newResult);
+            history.appendChild(newResult);
+        }
+
+        //미션2 사용자가 입력한 값을 보고,
+        //      내가 입력한 숫자보다 작으면 ? 숫자가 너무 작아요
+        //      더크면? 숫자가 너무 커요
+        //      같으면? 정답입니다.
+        //      힌트1:
+
+        //계산 바이너리서치.. 수학적인 계싼식 
+        // 미션4. 나의 찍ㄱ 기록용 , 계속 화면에 두고 싶음
+
+        //미션5. 각각의 입력값 외에 그 결과도 함께 적기 
+        
+    </script>
+</body>
+</html>

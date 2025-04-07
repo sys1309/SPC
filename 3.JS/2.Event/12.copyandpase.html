@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id ="Mytextarea">여기 있는 파일을 복사해보시오.</textarea>
+    <script>
+        document.getElementById('Mytextarea').addEventListener('copy', function() {
+            alert("불펌금지!");
+        })
+
+        document.getElementById('Mytextarea').addEventListener('paste', function(event) {
+            event.preventDefault(); //원래본연의기능 못하게 하기.. ㅡㅡ
+            alert("남의 코드 붙여넣지 말고, 직접구현하시오.!");
+        })
+    
+    </script>
+    
+</body>
+</html>

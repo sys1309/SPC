@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 20px;
+            background-color: lightgrey;
+        }
+
+        .inner{
+            padding: 10px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="inner">클릭하시오</div>
+    </div>  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            
+        
+            const container= document.querySelector(".container"); //셀렉터 문법으로 요소
+            const inner = document.querySelector(".inner");
+            document.addEventListener('click',function(event){
+                console.log('컨테이너 클릭됨');
+            })
+
+            inner.addEventListener('click', function(event){
+                console.log('안쪽 클릭됨')
+                event.stopPropagation();// 전파하지 마시오,..
+            })
+        })
+    </script>
+    
+</body>
+</html>

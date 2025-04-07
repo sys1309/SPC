@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            height: 2000px;
+            background: linear-gradient(to bottom, red, blue);
+        }
+    </style>
+</head>
+<body>
+    <div id ="content"></div>
+    <script>
+        window.addEventListener('scroll', function() {
+            console.log("페이지 스크롤");
+
+            //console.log("스크롤페이지:", window.plageYOffset);
+            console.log("스크롤페이지:", document.documentElement.scrollTop);
+
+            //실무적으로 많이 쓰는 
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            console.log("스크롤 위치:", )
+        })
+    </script>
+    
+</body>
+</html>
