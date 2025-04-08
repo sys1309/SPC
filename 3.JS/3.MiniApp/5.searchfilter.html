@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>실시간 검색 기능</h1>
+    <input type = "text" id="searchInput" placeholder="검색"...>
+    <ul id = 'itemsList'>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+        <li>Grapes</li>
+        <li>Watermelon</li>
+        <li>Strawberry</li>
+        <li>Blueberry</li>
+        <li>Peach</li>
+        <li>Plum</li>
+        <li>Kiwi</li>
+        <li>Fig</li>
+        <li>Pomegranate</li>
+        <li>Guava</li>
+        <li>Lychee</li>
+        <li>Raspberry</li>
+        <li>Coconut</li>
+        <li>Dragonfruit</li>
+    </ul>
+    <script>
+        //미션1. 실시간 검색기능을 구현한다
+        const searchInput = document.getElementById('searchInput');
+        const itemsList = document.getElementById('itemsList');
+        const items = itemsList.getElementsByTagName('li'); //tagname 범위를좁혀줌 
+        
+        //미션2. 검색창의 입력결과를 가져온다
+        //미션3. 해당 단어 목록에'포함'되어있는지 확인한다. (includes라는 내장함수 활용 )
+        searchInput.addEventListener('keyup', () => {
+            for (let i = 0; i < items.length; i++) {
+            const item = item(i);
+            const text = item.textContent;// 그하나의 아이템 글자 
+            //사용자가 입력한 글자가 이 하나의 li 요소안에 있나 
+                if (text.includes(searchInput.value)) {
+
+                } else {
+                    //사용자가 입력한거에 없음 
+                    item.style.display = 'none';
+                }
+            }
+
+        })
+
+ 
+        //미션4. 해당되는 것은 보여주고 해당하지 않는 것을 숨긴다 (display:none;<-- css 속성활동)
+
+        //for each로 쓰려면?? 배열/리스트 형태만 가능  
+        // searchInput.addEventListener('keyup', () => {
+        //     items.forEach((item) => {
+        //         console.log(item);
+        //     })
+        // })
+
+        //방법2. 스프레드 연산자로 리스트로 풀어주기 
+        // [...item].forEach(item) => {
+        //     console.log(item);
+        // }
+
+        item2.forEach(item) => {
+            const text = item.textContent.toLowerCase();
+            const filter = searchInput.value.toLowerCase();
+
+            if (text.toLowerCase().includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

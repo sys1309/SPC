@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .small-image{
+            width : 30%;
+            height : auto;
+        }
+
+        .big-image{
+            width: 100% !important;
+            height: 100% !important;
+            transition: all 0.3s ease-in-out;
+
+        }
+        .gallery img{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지 갤러리</h1>
+    <div>
+        <img src = "춘식.webp", alt = "고양이1" class = "small-image">
+        <img src = "춘식2.gif", alt = "고양이2" onclick="resizeImage(this)">
+        <img src = "춘식3.jpg", alt = "고양이3" onclick="resizeImage(this)">
+    </div>
+    <!--빈 이미지를 사용해서 주소(src)를 변경 -->
+    <img id="large-image" src="" alt = "큰고양이">
+
+    <script>
+        //마우스로 클릭한 이미지를 크게 보여주기 
+        function resizeImage(imgElement){
+            imgElement.classList.toggle("big-image");
+        }
+
+        // const img1 = document.getElementById('img1');
+        // const img2 = document.getElementById('img2');
+        // const img3 = document.getElementById('img3');
+        // const largeImage = document.getElementById('large-image');
+
+        // 방법1. 더미 빈 이미지를 사용해서 src 치환
+        // img1.addEventListener('click', function(){
+        //     largeImage.src = img.src;
+        //     largeImage.style.display='block'
+        // })
+
+        // img2.addEventListener('click', function(){
+        //     largeImage.src = img.src;
+        //     largeImage.style.display='block'
+        // })
+
+        // img3.addEventListener('click', function(){
+        //     largeImage.src = img.src;
+        //     largeImage.style.display='block'
+        // })
+
+        // const images = [img1, img2, img3];
+
+        // for (let i =0; i < images.length; i++) {
+        //     image[i].addEventListener('click', function(){
+        //         largeImage.src = image[i].src;
+        //         largeImage.style.display = 'block';
+        //     })
+        // }
+
+
+        // document.querySelectorAll(".gallery img").forEach(function(img){
+        //     img.addEventListener('click',function(){
+        //         const largeImage = document.getElementById('large-image');
+        //         largeImage.src = img.src;
+        //         largeImage.style.display = 'block';
+        //     })
+        // })
+
+
+        document.querySelectorAll(".gallery img").forEach(function(img){
+            img.addEventListener('click',function(){
+                const newimg = document. reatElement('img');
+                newimg.src = img.scr
+                newimg.style.maxwidth = '100px';
+                newimg.style.arge = '20px auto';
+
+                const container = document.getElementById('large-image-container');
+                container.innerHTML = '';
+                container.appendChild(newimg);
+
+
+            })
+        })
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

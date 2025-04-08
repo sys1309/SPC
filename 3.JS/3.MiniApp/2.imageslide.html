@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .silder{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .silder img{
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+
+        .slider img.active{
+            display: block;
+        }
+        button{
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지 슬라이더</h1>
+    <div>
+        <img src = "images/춘식.webp", alt = "고양이1" class = "active" style="width: 30%; height:auto;">
+        <img src = "images/춘식2.gif", alt = "고양이2" onclick="resizeImage(this)">
+        <img src = "images/춘식3.jpg", alt = "고양이3" onclick="resizeImage(this)">
+
+        <div class="filename" id="filename"> images/춘식.webp</div>
+
+        <div class = "button">
+            <button id = "prev">이전</button>
+            <button id = "next">이후</button>
+        </div>
+    </div>
+    <script>
+        //미션1. 버튼 가져다가 클릭하면 classactive를 다음거로 이동하기 파일명 등등 갱신 
+
+        //class 를 어떻게 이동할건지 
+        //이미지가 끝까지 갔을때 다시 처음으로 오려면 
+
+        const images = document.querySelectorAll(".slider img");
+        let currentIndex = 0;
+
+        document.getElementById('prev').addEventListener('click',()=>{
+            // image[currentIndex].classList.remove('active');
+            // currentIndex = currentIndex - 1;
+            // if (currentIndex < 0) {
+            //     currentIndex = images.langth -1;
+            // }
+
+
+
+            // if ... else... 멀티라인 한줄로 코딩하는 기법을 삼항연산자 
+            // currentIndex = if(   )  xxx : ?????
+
+            images[currentIndex].classList.add('active');
+            updateFilename();
+        })
+
+        document.getElementById('next').addEventListener('click', () => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = currentIndex + 1;
+            image[currentIndex].classList.add('active')
+        })
+        
+    </script>
+
+    
+</body>
+</html>
