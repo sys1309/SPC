@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 2px solid white;
+        }
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id = 'myCanvas' width="600" height = '400'></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d')
+
+        pecman = {
+
+            x: 350,
+            y :200,
+            size : 30,
+            startAngle : 0.2 * Math.PI,
+            endAngle : 1.8 * Math.PI,
+            directionX : 1,
+            angleIncrement : 0.82* Math.PI,
+            pecmanX : 350,
+            mouthOpen:1 
+
+        }
+
+
+        function drawPacman() {
+            ctx.clearRect(0,0, canvas.width, canvas.height)
+
+            ctx.beginPath();
+            ctx.moveTo(pecman.x ,pecman.y);
+            ctx.arc(pecman.x, pecman.y, pecman.size, pecman.startAngle, pecman.endAngle);
+            ctx.fillStyle= 'yellow'
+            ctx.fill()
+            ctx.closePath();
+
+        }
+
+        function updateAngles() {
+            if (pecman.startAngle <=0 || pecman.startAngle >= 0.25 * Math.PI) {
+                pecman.mouthOpen *= -1; //음수로 값 전환 
+            }
+            pecman.startAngle += pecman.angleIncrement * pecman.mouthOpen;
+            pecman.endAngle -= pecman.angleIncrement > pecman.mouthOpen;
+
+            // if (startAngle <=0) {
+            //     direction *= -1; //음수로 값 전환 
+            // }
+            // startAngle += angleIncreament * direction;
+
+        }
+
+        function updatePecmanPosition () {
+            pecman.y += pecman.directionY;
+            pecman.x += pecman.directionX;
+            if (pecman.x > canvas.width) {
+                pecman.x = canvas.width - pecman.size;
+            }
+
+            if (pecman.x < 0 + pecman.size) {
+                pecman.x = pecman.size;
+            }
+
+            if (pecman.y > canvas.height - pecman.size) {
+                pecman.y = canvas.height - pecman.size;
+                pecman.directionY = 0;
+            }
+
+            if (pecman.y <0 + pecman.size) {
+                pecman.y = pecman.size;
+                pecman.directionY = 0; 
+            }
+        }
+
+        function animate() {
+            updatePecmanPosition();
+            drawPacman();
+            updateAngles();
+            requestAnimationFrame(animate);
+        }
+
+        function handleKeyDown(e){
+            //미션1. 여기에다가 키 좌우에 따라서 directionX를 적절하게 바뀐다 
+            switch (e.key) {
+                case 'ArrowLeft':
+                    pecman.directionX += -1;
+                    break;
+                case 'ArrowRight':
+                    pecman.directionX += 1;
+                    break;
+            }
+        }
+
+        document.addEventListener('keydown', handleKeyDown)
+
+        drawPacman();
+        animate();
+
+    </script>
+    
+</body>
+</html>

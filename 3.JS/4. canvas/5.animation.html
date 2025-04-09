@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        let x = 0;
+        let direction = 1;
+        const boxSize = 50
+        const start_Y = 100
+
+        function draw() {
+            ctx.clearRect(0,0, canvas.width, canvas.height);
+
+            ctx.fillStyle = 'red';
+            ctx.fillRect(x, start_Y, boxSize, boxSize);
+
+            x += 1 * direction; 
+            if (x > canvas.width - boxSize) {
+                direction = -1;
+            }
+
+            if (x < 0) {
+                direction = 1;
+            }
+
+            //미션1. 이 네모가 끝까지 간다음에 앞에서 나오는게 거꾸로 오게 하려면?
+            //미션2. 네모가 왜 넘어갈까? 
+
+            requestAnimationFrame(draw)
+        }
+
+        draw();
+    </script>
+    
+    
+</body>
+</html>

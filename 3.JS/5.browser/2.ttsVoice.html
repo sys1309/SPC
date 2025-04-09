@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TTS 예제</h1>
+    <textarea id = 'text' rows="4" cols = '50'>Hello, this is text-to-speech example</textarea>
+    <div class="controls">
+        <select id = "voiceSelect"></select>
+        <button id = "speakbutton">말하기</button>
+    </div>
+
+    <script>
+
+            window.speechSynthesis.speak(speech);
+            const textInput = document.getElementById('textInput');
+            const voiceSelect = document.getElementById('voiceSelect');
+            const speakButton = document.getElementById('speakButton');
+        
+            //web speech API를 지원하느냐??
+            if ('speechSynthesis' in window) {
+                console.log('지원함');
+
+                const updateVoices = () => {
+                    const voices = window.speechSynthesis.getVoices();
+                    console.log('사용 가능한 목소리 리스트:', voices);
+
+                    voiceSelect.innerHTML = "";
+                    voices.forEach((voices,index) => {
+                        const option = document.createElement('option');
+                        option.value = index;
+                        option.text = `$(voice.name) ($(voice.lang))`;
+                        voiceSelect.add(option);
+                })
+
+                };
+
+                window.speechSynthesis.addEventListener('voicechanged', updateVoices());
+
+                //초기 목소리 목록 갱신
+                updateVoices() 
+
+                function speak(){
+                    const selectedVoiceIndex= voiceSelect.value;
+                    const selectedVoice = window.speechSynthesis.getVoice()[selectedVooiceIndex]
+                    const textToSpeak = textInput.value;
+                    const utterence = new SpeechSynthesisUtterance(textToSpeak);
+                    utterence.voice = selectedVoice;
+                    speechSynthesis.speak(utterence);
+
+                }
+
+                speakButton.addEventListener('click', speak);
+
+            } else {
+                console.log('음성 지원 안하는 브라우저임');
+                alert('어쩌궁 저쩌궁 ')
+            }
+    
+    </script>
+    
+</body>
+</html>

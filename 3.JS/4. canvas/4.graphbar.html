@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+
+        const graphData = {
+            A: 10,
+            B: 20,
+            C: 40,
+            D: 60,
+            E: 80,
+            F: 100,
+        }
+
+        drawBarGraph(graphData); //내가 함수 만들고, 데이터 넣고바 그래프그리기
+
+        function drawBarGraph(data) {
+            const barwidth = 30;
+            const barheightOffset = 20;
+            let startX = 20;
+
+            for (const key in data) {
+                const barHeight = data(key);
+
+                ctx.fillstyle = 'blue'
+                ctx.fillRect(startX, canvas.height - barHeight - barWidth, barHeight);
+                startX = startX +50; 
+            }
+                }
+    </script>
+    
+</body>
+</html>

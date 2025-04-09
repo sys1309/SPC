@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id = "myCanvas" width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+
+        context.font = '38px Arial';
+        context.fillStyle = '#0095DD'
+
+        context.fillText('Hello, Canvas!', 50, 100);
+
+        context.font = 'italic 40px Times New Roman';
+        context.fillStyle = 'red';
+        context.fillText('Styled Text', 50, 100);
+
+        const gradient = context.createLinearGradient(0,0, canvas.width, 0);
+        gradient.addColorStop(0, 'red');
+        gradient.addColorStop(1, 'blue');
+        context.fillStyle = gradient;
+
+        context.fillText('Canvas Text', 50, 100);
+
+    </script>
+
+    
+</body>
+</html>

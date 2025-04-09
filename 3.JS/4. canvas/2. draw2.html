@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px dashed black
+        }
+    </style>
+</head>
+<body>
+    <canvas id = 'myCanvas' width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+
+        context.beginPath();
+        context.moveTo(300,100);
+
+        const startAngle = 0.2 * Math.PI; // 45도
+        const endangle = 1.8 * Math.PI; // 315도 
+        context.arc(300,100,50, startAngle, endangle);
+
+        context.fillStyle = 'yellow';
+        context.fill();
+        context.closePath();
+
+        //얼굴 그리기
+        context.beginPath();
+        
+        //얼굴 바깥쪽
+        context.arc(75, 75, 50, 0, Math.PI * 2);
+
+        //얼굴의 입 (반원)
+        context.moveTo(65,65);
+        context.arc(75, 75, 35, 0, Math.PI);
+        
+        //오른쪽 눈
+        context.moveTo(95,65);
+        context.arc(60, 65, 5, 0, Math.PI * 2);
+
+
+        //왼쪽 눈
+        context.moveTo(65,65);
+        context.arc(60, 65, 5, 0, Math.PI * 2);
+       
+
+
+        
+
+        context.stroke();
+        context.closePath();
+
+    </script>
+    
+</body>
+</html>

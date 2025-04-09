@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas')
+        const ctx = canvas.getContext('2d')
+        let direction = 1;
+
+
+        const ball = {
+            x: 50, 
+            y: 50,
+            radius: 20,
+            dx: 1, //속도제어가 쉬워짐 
+            dy: 1
+
+        }
+        
+        function drawBall() {
+            ctx.clearRect(0,0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
+            ctx.fillStyle = '#0095DD'
+            ctx.fill();
+            ctx.closePath();
+
+            ball.x += 1;
+            ball.y += 2;
+
+            //미션 벽에 부딪히면 반사하기 
+            if (ball.y > canvas.height - ball.radius || ball.y < ball.radius) {
+                ball.dy = -ball.dy;
+            }
+
+            if (ball.x > canvas.width - ball.radius || ball.x < ball.radius) {
+                ball.dx = -ball.dx;
+            }
+
+
+            //벽뚫고 반대편에서 나오기 
+            if (ball.y > canvas.height) {
+                ball.y = 0;
+            }
+
+            if (ball.x > canvas.width) {
+                ball.x = 0;
+            }
+
+            requestAnimationFrame(drawBall);
+        }
+
+        drawBall();
+    </script>
+    
+</body>
+</html>

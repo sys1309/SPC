@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0;
+            background-color: rgb(218,218,218);
+
+        }
+        #display{
+            font-size: 40px;
+        }
+        .button-container{
+            gap:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="display">00:00:00</div>
+    <div class="button-container">
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+    </div>
+
+    <script>
+        const startButton = document.getElementById("start-button")
+        const stopButton = document.getElementById("stop-button")
+        const resetButton = document.getElementById("reset-button")
+        const display = document.getElementById('display')
+
+        let startTime; // 스탑워치 시작 시간 
+        let updatedTime; // 업데이트된 시간 
+        let timerInterval;
+        let running = false; // 스탑워치의 실행 여부(현재 실행중이냐 아니냐)
+
+        const HOUR_MS = 1000*60*60;
+        const MINUTE_MS = 1000*60; 
+
+        function startTimer() {
+            if (!running) {
+                //실행중이 아닐때
+                startTime = new Date().getTime();
+                timerInterval = setInterval(updatedTime,10); 
+                running = true;
+
+            }
+
+
+            updatedTime = new Date().getTime(); //현재 시간 확인 
+            diff = updatedTime - startTime; //경과 시간 확인
+
+            let minutes = Math.floor(diff % (1000 * 60 * 60)/(1000*60));
+            let seconds = Math.floor(diff % (1000* 60) / 1000);
+            let milliseconds = Math.floor((diff %1000) / 10);
+
+
+            // display.textContent = 
+            // (minutes < 10 ? '0' + minutes : minutes) + ':' +
+            // (seconds < 10 ? '0' + seconds : seconds) + ':' +
+            // (milliseconds <10 ? '0' + milliseconds : milliseconds);
+
+            display.textContent = 
+                String(minutes).padStart(2, '0') + ':' +
+                String(seconds).padStart(2, '0') + ':' +
+                String(milliseconds).padStart(2, '0');
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            running = false;
+
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            display.textContent = '00:00:00';
+
+        }
+
+        startButton.addEventListener('click', startTimer)
+        stopButton.addEventListener('click', stopTimer)
+        resetButton.addEventListener('click', resetTimer)
+    </script>
+    
+</body>
+</html>
