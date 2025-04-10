@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id = "myheading">헬로우 제이쿼리</h1>
+    <button id="mybutton">글자 바꾸기</button>
+
+    <script>
+        $(document).ready(function () {
+            $('mybutton').click(function() {
+                $('myheading').text('제이쿼리로 글자 바꿈!');
+            });
+        });
+        // document.addEventListener('DOCUMENT', function() {
+        //     document.getElementById('mybutton').addEventListener('click'), function(){
+        //         document.getElementById('mybutton').textContent = '글자 바뀜'
+        //     }
+        // })
+
+    </script>
+    
+</body>
+</html>

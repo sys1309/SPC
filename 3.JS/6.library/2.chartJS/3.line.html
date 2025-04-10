@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
+    <!-- Chart.js 4.x용 CDN (정상 작동 확인된 주소) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+
+</head>
+<body>
+    <canvas id ='myChart'></canvas>
+ 
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    const Utils = {
+        months({count}) { // destructing(구조 분할)
+            const Months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul','oct', 'sep', 'nov', 'dec']
+            return Months.slice(0, count);
+        }
+    }
+
+    const labels = Utils.months({count: 7});
+    const data = {
+        labels: labels,
+        datasets: [
+        {
+        label: 'My First Dataset',
+        data: [65, 59, 80, 81, 56, 55, 40],
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1
+        },
+        {
+        label: 'My First Dataset',
+        data: [65, 59, 8, 81, 56, 75, 40],
+        fill: false,
+        borderColor: 'rgb(75, 192, 12)',
+        tension: 0.1
+        },
+        {
+        label: 'My First Dataset',
+        data: [65, 99, 80, 81, 66, 55, 40],
+        fill: false,
+        borderColor: 'rgb(75, 152, 192)',
+        tension: 0.1
+        }
+
+    ]
+    };
+
+    const config = {
+    type: 'line',
+    data: data,
+    option: {
+        responsive: false,
+        maintainAspectRatio: true,
+    }
+    };
+
+    const myChart = new Chart(ctx, config);
+</script>
+    
+</body>
+</html>

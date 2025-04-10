@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입 폼 예시</h1>
+    <form id ="exampleForm">
+        <!-- 이름 -->
+        <div class="mb-3">
+            <label for="name" class="form-label">이름</label>
+            <input type = 'text' id="name" class = 'form-control' placeholder ="이름을 입력..." required>
+        </div>
+
+        <!-- 이메일 -->
+        <div class = "mb-3">
+            <label for="email" class="form-label">이메일</label>
+            <input type = 'email' id="email" name = 'email' class = "form-control" 
+                    placeholder="이메일 주소를 입력..." required>
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class = "mb-3">
+            <label for="password" class="form-label">비밀번호</label>
+            <input type = 'password' id="password" name = 'password' class = "form-control" 
+                    placeholder="비밀번호를 입력..." required>
+        </div>
+
+        <!-- 제출 -->
+         <button type="submit" class="btn btn-primary">제출</button>
+
+    </form>
+    <!-- 결과출력공간 -->
+     <div id ='result' class = "mt-4"></div>
+    <script>
+        const form = document.getElementById('exampleForm');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', (event) => {
+            even.preventDefault();
+
+            //폼 데이터 가져오기  - 위의 폼을 객체에 넣고 get 필드 함수를 사용해서 내용 넣기? 
+            const formData= new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const password = formData.get('password');
+
+            //결과출력
+            resultDiv.innerHTML = `
+                <div class='alert alert-success'>
+                    <h5>폼 데이터 제출 완료!</h5>
+                    <p><strong>이름:</strong> $(name) </p>
+                    <p><strong>이메일:</strong> $(email) </p>
+                    <p><strong>암호:</strong> $(password) </p>
+                </div>
+            `
+        })
+     </script>
+</body>
+</html>

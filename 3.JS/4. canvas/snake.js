@@ -3,6 +3,7 @@ const GAME_SPEED = 200;
 const blockSize = 20; //블록 크기
 
 let snake = {x: 0, y: 0} // 뱀의 시작 위치 
+let food = {x: 100, y : 100}
 
 //DOM과 각종 필요한 여러 컴포넌트 로딩이 끝난 이후 이거 실행해라. 
 window.onload = initialize;
@@ -43,6 +44,14 @@ function draw() {
 
     context.fillStyle = 'blue';
     context.fillRect(0, 0, blockSize, blockSize);
+
+    if (snake.x === food.x && snake.y === food.y) {
+        food.x = Math.floor(Math.random * canvas.width / blockSize * blockSize)
+    }
+
+    context.fillStyle = 'red';
+    //food.x = Math.floor(Math.random * canvas.width / blockSize * blockSize)
+    context.fillRect(100, 100, blockSize, blockSize)
 }
 
 //숙제1 뱀게임 화살표 방향이동
