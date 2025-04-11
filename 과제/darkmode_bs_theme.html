@@ -7,89 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    <style>
-        body.dark-mode {
-          background-color: #2a2a2a;
-          color : #f1f1f1;
-        }
-        .dark-mode{
-            background-color: #212529;
-            color :white;
-        }
-
-        .dark-mode .table{
-          background-color: #1e1e1e;
-          color: white;
-        }
-
-        .dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
-          background-color: #2a2a2a;
-        }
-
-        body.dark-mode .page-link {
-          background-color: #2a2a2a;
-          color: #f1f1f1;
-          border-color: #444;
-        }
-
-        body.dark-mode .page-link:hover {
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .page-item.active .page-link {
-          background-color: #0d6efd;
-          border-color: #0d6efd;
-          color: white;
-        }
-
-        body.dark-mode .container-fluid{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .nav-link{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .navbar-brand{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .navbar-item{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .form-control{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        body.dark-mode .form-control{
-          background-color: #2a2a2a;
-          color: white;
-        }
-
-        
-        body.dark-mode .btn{
-          background-color: #2a2a2a;
-          color: white;
-          border: solid 1px;
-          border-color: #f1f1f1;
-        }
-
-        body.dark-mode input::placeholder{
-          color:#f1f1f1
-        }
-
-    </style>
 </head>
-<body class="p-4">
+<body data-bs-theme = "light" class="p-4"> <!--자동 다크 모드 설정-->
     <!-- As a heading -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand mb-0 h1">MyLogo</a>
         <ul class="navbar-nav me-auto mb-2 flex-row">
@@ -100,17 +21,16 @@
           <li class="nav-item mx-2"><a class="nav-link" href="#"> Store </a></li>
         </ul>
           <div class = "d-flex ms-auto">
-            <button id = "darkModeBtn" class = "btn btn-outline-secondary ms-auto" onclick="toggleMode()">switch to dark mode</button>
+            <button class = "btn btn-outline-dark" id ="darkModeBtn" onclick="toggleTheme()">switch to dark mode</button>
           </div>
         </div>
 
     </nav>
     <div class="mb-3 mt-4">
-      <!-- <label for="name" class="form-label">이름</label> -->
       <input type = 'text' id="name" class = 'form-control' placeholder ="Search table..." required>
     </div>
     
-    <table id = table class="table table-striped table-borderless">
+    <table class="table table-striped">
         <thead>
           <tr>
             
@@ -172,21 +92,27 @@
       </nav>
 
       <script>
-        function toggleMode() {
-          const body = document.body;
-          const btn = document.getElementById('darkModeBtn');
-          const table = document.getElementById('table')
-          table.style.color= 'black'
-          table.style.backgroundColor= 'black'
+        function toggleTheme() {
+            const currentTheme = document.body.getAttribute("data-bs-theme");
+            const btn = document.getElementById('darkModeBtn')
 
-          body.classList.toggle("dark-mode");
+            if(currentTheme ==='dark') {
+                document.body.setAttribute("data-bs-theme", "light");
+                btn.innerText = "Switch to Dark Mode";
+            } else {
+                document.body.setAttribute("data-bs-theme", "dark");
+                btn.innerText = "Switch to Light Mode";
+            }
 
-          if (body.classList.contains("dark-mode")) {
-            btn.innerText = "Switch to Light Mode";
-          } else {
-            btn.innerText = "Switch to Dark Mode";
-          }
+        // document.body.setAttribute(
+        //     "data-bs-theme",
+        //     currentTheme === "light" ? "dark" : "light" //light는 기존테마로 간주됨 별도로 정의할 필요X
+        //     btn.innerText = "Switch to Light Mode";
+
+        // );
         }
+
+
       </script>
 </body>
 </html>
