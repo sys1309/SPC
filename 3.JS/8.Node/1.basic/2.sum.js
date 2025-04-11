@@ -6,4 +6,4 @@ function sum_to_100(number) {
     console.log(`${number} 까지의 합은 ${sum}`);
 }
 
-sum_to_100(100);
+sum_to_100(10);
