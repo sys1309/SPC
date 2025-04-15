@@ -32,3 +32,17 @@ function leftInvertedTriangle() {
 
 console.log(leftTriangle());
 console.log(leftInvertedTriangle());
+
+
+function leftTriangle3(rows =ROWS) {
+  for(let i =1; i <=rows; i++) {
+    console.log("*".repeat(i));
+  }
+}
+
+
+function leftInvertedTriangle3(rows =5){
+  for (let i =1 ; i <= rows; i++) {
+    console.log(' '.repeat(rows - i) + '*'.repeat(i));
+  }
+}
