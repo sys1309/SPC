@@ -56,8 +56,6 @@ sendMessage.addEventListener('click',()=>{
     // .then(resp => resp.json())
     // .then(resp => console.log(resp))
 
-
-
 chatbotInput.addEventListener('keypress', () => {
     if (e.key === 'Enter') {
         console.log('엔터키 눌렀으나 ~~~')
