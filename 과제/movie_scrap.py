@@ -30,13 +30,11 @@ for title in soup.select('div.movie-title') :
 # print(movie_links)
 
 #영화 줄러기 추출
-for link in movie_links[:5]:
+for link in movie_links[:5]: #처음 다섯개만 예시로 추출 
     detail_res = requests.get(link)
     detail_soup = BeautifulSoup(detail_res.text, 'html.parser')
 
     print(detail_soup.find('div', class_='text').get_text())
-
-
 
 
 #영화 포스터 저장 
@@ -66,6 +64,3 @@ for link in movie_links[:5]:
 
 #     except Exception as e:
 #         print(f"저장 실패 ({img_url}): {e}")
-
-
-
