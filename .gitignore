@@ -7,3 +7,8 @@ node_modules/
 #crednetion 커밋제외
 secret.txt
 .env
+
+#DB파일 커밋 제외
+*.db
+*.sqlite
+*.sqlite3

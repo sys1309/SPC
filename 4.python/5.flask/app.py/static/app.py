@@ -8,9 +8,9 @@ app = Flask(__name__, static_foler = 'my_static') #기본으로 허용된 static
 def home():
     return render_template('index.html', text = 'Hello')
 
-@app.route('/login', method = ['POST', 'GET'])
+@app.route('/login', methods = ['POST', 'GET'])
 def login():
-    if request.method == 'POST':
+    if request.methods == 'POST':
         user = request.form['name']
         print('폼입력:', user)
         return redirect(url_for('user', user=user))

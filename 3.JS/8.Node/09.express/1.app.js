@@ -1,7 +1,5 @@
 const express = require('express');
 
-
-
 const app = express();
 const port = 3000;
     //라우트를 만드는 과정 
@@ -15,4 +13,3 @@ app.get('/user',(req, res) => {
 app.listen(port, ()=> {
     console.log(`서버가 준비됨 ${port}`);
 });
-
