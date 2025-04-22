@@ -16,7 +16,7 @@ app.get('/',(req, res) => {
 
 app.post('/login',(req, res) => {
     const {username, password} = req.body;
-    const user1 = db.prepare('select * from user where id = ? and password = ?').get(username);
+    const user1 = db.prepare('select * from user where id = ? and password = ?').get(username, password);
 
     if (user1) {
         res.send(`<h2>로그인 성공 ${user1.id}</h2>`)

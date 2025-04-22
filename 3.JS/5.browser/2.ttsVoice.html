@@ -16,7 +16,7 @@
     <script>
 
             window.speechSynthesis.speak(speech);
-            const textInput = document.getElementById('textInput');
+            const textInput = document.getElementById('text');
             const voiceSelect = document.getElementById('voiceSelect');
             const speakButton = document.getElementById('speakButton');
         
@@ -32,7 +32,7 @@
                     voices.forEach((voices,index) => {
                         const option = document.createElement('option');
                         option.value = index;
-                        option.text = `$(voice.name) ($(voice.lang))`;
+                        option.text = `${voice.name} (${voice.lang})`;
                         voiceSelect.add(option);
                 })
 
