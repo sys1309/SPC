@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>상품 목록</h2>
+    <form action="/product" method="POST">
+        <h2 style="text-align:center; margin-top: 30px;">상품 목록</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Product 1</td>
+              <td>2000</td>
+              <td><button onclick="addToCart(1)">담기</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Product 2</td>
+              <td>3000</td>
+              <td><button onclick="addToCart(2)">담기</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Product 3</td>
+              <td>1500</td>
+              <td><button onclick="addToCart(3)">담기</button></td>
+            </tr>
+          </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>

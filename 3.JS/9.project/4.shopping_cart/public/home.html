@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href ="css/style.css">
+</head>
+<body>
+    <div id = 'menuContainer'>
+        <nav>
+            <ul>
+                <li><a href='/home'>HOME</a></li>
+                <li><a href='/products'>PRODUCT</a></li>
+                <li><a href='/cart'>CART</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id = 'loginFormContainer' style = 'display:none;'>
+        <h2>로그인</h2>
+        <form action="/login" method="POST">
+            <label for="username">Username: </label>
+            <input type="text" id = "username" name="username" placeholder = 'username' required />
+            <br />
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder = 'password' required />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div id="profile">
+        <h1>안녕하세요,<span id ='usernameSpan'></span>님</h1>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

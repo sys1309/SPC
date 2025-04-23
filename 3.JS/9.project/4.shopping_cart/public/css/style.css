@@ -1,0 +1,19 @@
+nav{
+    background-color: black;
+}
+nav li{
+    
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display : block;
+    text-align: center;
+    padding: 14px 16px;
+    color:aliceblue;
+    text-decoration: none;
+}
+#profile{
+    display: block;
+}
