@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async() => {
-    const response = await fetch('/api/products');
+    const response = await fetch('/api/cart');
     const data = await response.json();
 
     displayTable(data.cart);
