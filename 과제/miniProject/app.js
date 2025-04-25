@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const path = require('path')
 const session = require('express-session')
 const sqlite = require('sqlite3')
+const multer = multer({dest: 'uploads/'})
 
 const app = express();
 const port = 3000;

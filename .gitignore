@@ -12,3 +12,9 @@ secret.txt
 *.db
 *.sqlite
 *.sqlite3
+
+#이미지파일 커밋 제외
+*.jpg
+*.webp
+*.gif
+*.png
