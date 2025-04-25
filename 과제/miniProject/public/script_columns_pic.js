@@ -1,18 +1,20 @@
 document.addEventListener('DOMContentLoaded', async() => {
     const response = await fetch('/api/memo_pic');
     const data = await response.json();
-    console.log(data);
-    displayMemo([data])
+    // console.log('data:',data)
+    displayMemo(data)// 이미 [] 배열임
 })
+
+
+const formData = new FormData();
 
 async function uploadPost() {
     const title = document.getElementById('input-title').value;
     const content = document.getElementById('input-text').value;
     const picInput = document.getElementById('input-file').files[0];
 
-    // console.log(picInput)
+    // console.log('사진이용:',picInput)
 
-    const formData = new FormData();
     formData.append('title', title)
     formData.append('content', content)
     formData.append('pic', picInput)
@@ -44,14 +46,14 @@ async function deletePost(title, content){
     else alert('삭제 실패!')
 }
 
+
 function displayMemo(memos) {
     const memoBody = document.querySelector('#card-list');
-    // memoBody.innerHTML='';
+    memoBody.innerHTML='';
 
     memos.forEach((memo) => {
         const row = document.createElement('div');
-        console.log({memo});
-        console.log(memo[0].title);
+
         row.innerHTML= `
             <div class="card">
                 <div class = 'view-mode'>
@@ -64,19 +66,20 @@ function displayMemo(memos) {
             <div class='edit-mode' style='display:none;'>
                 <input class = 'form-control edit-title' value='${memo.title}'>
                 <textarea class = 'form-control edit-content'>${memo.content}</textarea>
-                <button class = 'btn btn-primary' onclick = "saveEdit( this, '${memo.title}', '${memo.content}' )">저장</button>
+                <input class = "form-control edit-pic" type = "file" name="pic">
+                <img src="${memo.img_path}" alt="업로드 이미지" class= "card-img-top">
+                <button class = 'btn btn-primary' onclick = "saveEdit( this, '${memo.title}', '${memo.content}', '${memo.img_path}' )">저장</button>
             </div>
             </div>
             `
             
             memoBody.appendChild(row);
-            // memoBody.prepend(row);
-    })
-}
+    })}
 
 function clearForm() {
     document.getElementById('input-title').value= '';
     document.getElementById('input-text').value= '';
+    document.getElementById('input-file').value= '';
 }
 
 
@@ -89,20 +92,27 @@ function enableEdit(button, title, content) {
     editMode.style.display = 'block';
 }
 
-async function saveEdit(button, title, content) {
+async function saveEdit(button, title, content, img_path) {
     const card = button.closest('.card');
     const newTitle = card.querySelector('.edit-title').value;
     const newContent = card.querySelector('.edit-content').value;
+    // const newPic = card.querySelector('#input-file2').files[0];
+    const fileInput = card.querySelector('.edit-pic'); // ✅ class 사용
+    const newPic = fileInput.files[0];
 
-    const response = await fetch('/api/memo/update', {
+
+    console.log('pic:',newPic)
+    console.log('🎯 fileInput:', fileInput);
+    console.log('🎯 files:', fileInput.files);  
+
+    formData.append('title', newTitle)
+    formData.append('content', newContent)
+    formData.append('pic', newPic)
+    
+
+    const response = await fetch('/api/memo_pic/update', {
         method: 'PUT',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-            title,
-            content,
-            newTitle,
-            newContent
-        })
+        body: formData
     })
 
     if (response.ok) {

@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const path = require('path')
 const session = require('express-session')
 const sqlite = require('sqlite3')
-const multer = multer({dest: 'uploads/'})
+// const multer = multer({dest: 'uploads/'})
 
 const app = express();
 const port = 3000;
@@ -13,14 +13,14 @@ const db = new sqlite.Database('memo.db', (err) => {
 
 app.use(morgan('dev'))
 app.use(express.json())
-app.use(express.static(path.join(__dirname,'static')));
+app.use(express.static(path.join(__dirname,'public')));
 app.use(session({
     secret:'adbc1234',
     resave: false //세션 데이터가 바뀌어도 저장 ? 
 }))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'static', 'memo.html'))
+    res.sendFile(path.join(__dirname, 'public', 'memo.html'))
 })
 
 

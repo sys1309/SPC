@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async() => {
     const response = await fetch('/api/memo');
     const data = await response.json();
+    console.log('data:',data)
 
     displayMemo(data)
 })

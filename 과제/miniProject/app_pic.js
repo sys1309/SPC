@@ -4,7 +4,6 @@ const path = require('path')
 const session = require('express-session')
 const sqlite = require('sqlite3')
 const multer = require('multer')
-// const cors = require('cors');
 
 // const upload = multer({dest: path.join(__dirname, 'uploads')});
 const app = express();
@@ -13,7 +12,7 @@ const db = new sqlite.Database('memo_pic.db', (err) => {
     if(err) console.log('DB연결 실패')
 })
 
-// app.use(cors());
+
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.static(path.join(__dirname,'public')));
@@ -21,6 +20,7 @@ app.use(session({
     secret:'adbc1234',
     resave: false //세션 데이터가 바뀌어도 저장 ? 
 }))
+app.use('/uploads', express.static(path.join(__dirname,'uploads')))
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'memo_pic.html'))
@@ -40,6 +40,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+
 app.post('/api/memo_pic', upload.single('pic'), (req, res)=>{
     const {title, content} = req.body;
     const imagePath = req.file ? `/uploads/${req.file.filename}` : null;
@@ -56,7 +57,6 @@ app.post('/api/memo_pic', upload.single('pic'), (req, res)=>{
     });
 
     const newMemo = {title, content, img_path: imagePath};
-    // console.log('server answermemo', newMemo)
 
     res.status(200).json(newMemo)
 })
@@ -65,11 +65,12 @@ app.get('/api/memo_pic', (req,res) => {
     const sql = 'select * from memo_pic';
 
     db.all(sql, [], (err, row) => {
-        // if(err){
-        //     console.error('메모 조회 실패:', err.message);
-        //     return res.status(500).json({success:false});
-        // }
+        if(err){
+            console.error('메모 조회 실패:', err.message);
+            return res.status(500).json({success:false});
+        }
         res.json(row);
+        console.log(row)
     })
 })
 
@@ -82,18 +83,21 @@ app.delete('/api/memo_pic/delete', (req,res) => {
     });
 });
 
-app.put('/api/memo_pic/update',(req,res)=>{
-    const {oldTitle, oldContent, newTitle, newContent} = req.body;
-    const sql = 'update memo_pic set title=?, content=? where title=? || content=?';
+app.put('/api/memo_pic/update', upload.single('pic'), (req,res)=>{
+    const {oldTitle, oldContent, oldPic, newTitle, newContent} = req.body;
+    const newPic = req.file ? `/uploads/${req.file.filename}` : null;
+    const sql = 'update memo_pic set title=?, content=?, img_path=? where title=? AND content=? AND img_path=?';
+
+    console.log('body',req.body)
+    console.log('file',req.file)
     
-    db.run(sql, [newTitle, newContent, oldTitle, oldContent], function(err) {
+    db.run(sql, [newTitle, newContent, newPic, oldTitle, oldContent, oldPic], function(err) {
         if(err) {return res.status(500).json({success:false})
         }
        
-        res.json({ title:newTitle, content: newContent });
+        res.json({ title:newTitle, content: newContent, pic: newPic});
     })
 });
-
 
 app.listen(port, () => {
     console.log('서버레디')
