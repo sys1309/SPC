@@ -1,0 +1,51 @@
+nav ul {
+    list-style-type : none;
+    padding:0;
+}
+
+nav ul li {
+    display: inline; /*블록요소 인라인으로?*/
+    margin-right: 10px;
+}
+
+.tweet {
+    border: 1px solid #ccc;
+    padding: 10px; /*안쪽 공간*/
+    margin-bottom: 10px;
+}
+
+.tweet-body-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-author{
+    display: flex;
+    font-size: 0.9px;
+    color:#ccc;
+    font-style: italic;
+    justify-content: space-between;
+}
+
+.tweet-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 로그인 관련 */
+.flash-messages li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.flash-messages li.success {
+    background-color: aliceblue;
+    color:aquamarine;
+}
+
+.flash-messages li.danger {
+    background-color: aliceblue;
+    color: #721c72;
+}
