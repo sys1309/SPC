@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bg-gray-100"> <!--배경을 밝은 회색으로-->
+    <nav class="bg-white shadow p-4 flex justify-between">
+        <div class="text-2xl font-bold text-blue-000">my app</div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+            <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-500">Contant</a>
+        </div>
+    </nav>
+    <div class="max-w-5xl mx-auto p-6"> 
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">사용자 목록</h1>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounds mb-6">사용자 추가</button>
+
+        <div class="bg-white rounded shadow overflow-x-auto"></div><!--가로스크롤 허용하는 테이블 만들어짐-->
+            <table class="min-x-full text-center">
+                <thead class="bg-gray-200">
+                    <th class="py-3 px-4">ID</th>
+                    <th class="py-3 px-4">이름</th>
+                    <th class="py-3 px-4">이메일</th>
+                    <th class="py-3 px-4">액션</th>
+                </thead>
+                <tbody class="border-b">
+                    <td class="py=3 px-4">1</td>
+                    <td class="py=3 px-4">홍길동</td>
+                    <td class="py=3 px-4">hong@example.com</td>
+                    <td class="py=3 px-4">
+                        <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-3 rounds mb-6">삭제</button>
+                    </td>
+                </tbody>
+                <tbody class="border-b">
+                <td class="py=3 px-4">2</td>
+                <td class="py=3 px-4">김철수</td>
+                <td class="py=3 px-4">kim@example.com</td>
+                <td class="py=3 px-4">
+                    <button onclick="deleteUser(2)" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-3 rounds mb-6">삭제</button>
+                </td>
+                </tbody>
+
+            </table>
+    </div>
+
+    <script>
+        async function addUser() {
+            const { value: formValues } = await Swal.fire({
+                title: "로그인",
+                html: `
+                    <input id="swal-input-email" class="swal2-input" placeholder="이메일">
+                    <input id="swal-input-name" class="swal2-input" placeholder="이름" type="text" >
+                `,
+                focusConfirm: false,
+                showCancelButton: true,
+                confirmButtonText: '로그인',
+                cancelButtonText: '취소',
+                preConfirm: () => {
+                    const email = document.getElementById('swal-input-name').value;
+                    const password = document.getElementById('swal-input-email').value;
+                    if (!email || !password) {
+                        Swal.showValidationMessage('모든 필드를 입력하세요!');
+                        return false;
+                    }
+
+                    return { email, password };
+                }
+            });
+
+            if (formValues) {
+                Swal.fire('추가 완료!', `이름: ${formValues.name}`);
+            }
+        }
+
+        function deleteUser(id){
+            Swal.fire({
+                title: "정말 삭제하시겠습니까?",
+                showCancelButton: true,
+                confirmButtonText: "삭제",
+                cancelButtonText: "취소"
+            }).then((result)=>{
+                if(result.isconfirmed){
+                    Swal.fire("삭제완료시", `ID:${id} 사용자`)
+                }
+            });
+        }
+
+    </script>
+    
+</body>
+</html>

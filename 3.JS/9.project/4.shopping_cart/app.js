@@ -3,6 +3,7 @@ const express = require('express')
 const session = require('express-session')
 const morgan = require('morgan')
 const path = require('path')
+const sqlite = require('sqlite3')
 
 //변수선언
 const app = express()
