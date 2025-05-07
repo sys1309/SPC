@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express app</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>ChatGPT 세션 관리 챗봇</h1>
+    <div id="sidebar">
+        <button type="button" id="new-chat-button">새로운 대화</button>
+        <div id="session-history">
+            <div class="session-info">
+                <strong>세션ID:</strong><span id="current-session-id"></span>
+            </div>
+            <div class="session-info">
+                <strong>시작시간:</strong><span id="current-session-date"></span>
+            </div>
+
+            <div id="session-list-container"></div>
+        </div>
+    </div>
+
+    <div class="content">
+    <div id="chat-container"><!--대화내용 주고받을 공간--></div>
+    <form id="user-input-form">
+        <input type="text" id="user-input" placeholder="메세지를 입력하세요">
+        <button type="submit">전송</button>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

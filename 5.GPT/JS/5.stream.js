@@ -1,7 +1,6 @@
 const {OpenAi} = require('openai')
 require('dotenv').config({pata:'../env'})
 
-async function getGPTresponse(userInput){
 const openai = new OpenAi({
     apikey: process.env.OPENAI_API_KEY
 });
