@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>문서 기반 챗봇</h1>
+    <input type = 'file' id = 'fileInput'>
+    <button onclick="uploadFile()">업로드</button>
+    <h2>질문하시오</h2>
+    <input type="text" id="questionInput" onclick="askQuestion()">
+    <h3>답변</h3>
+    <div id="answer"></div>
+
+    <script>
+        async function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new formData();
+            formData.append('file',file);
+            const response = await fetch('/upload', {
+                method:'POST',
+                body:formData
+            })
+
+            const result = await response.json();
+            alert(result.message)
+        }
+
+        async function askQuestion(){
+            const questionInput = document.getElementById('questionInput');
+            const question = questionInput.value;
+            const response = await fetch('/ask', {
+                method: 'POST',
+                body:{'Content-Type':'applcation/json'}
+            })
+            const result = await response.json();
+            document.getElementById('answer').innerHTML=(result.answer).replace(/\n/g,`<br>`);
+        }
+    </script>
+</body>
+</html>
