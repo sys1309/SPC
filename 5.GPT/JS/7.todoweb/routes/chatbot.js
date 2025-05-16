@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../models/database')
+const db = require('../models/database')
 const todoModel = require('../models/todoModel')
 
 const {OpanAI} = require('openai');
@@ -12,7 +12,7 @@ const openai = new OpenAI();
 router.post('/api/chat', async (req,res)=>{
     const {question} = req.body;
 
-    const reply = await requestChatGPT(question);
+    const reply = await requestChatGPT(command_prompt, question);
 
     let answer;
 
@@ -37,28 +37,62 @@ router.post('/api/chat', async (req,res)=>{
             answer = '완료 처리 했음'
             break;
         case 'delete':
-            var findItem = todos.find(t => t.text.includes(item)); 아이디? 아이템?
+            var findItem = todos.find(t => t.text.includes(item));
             todoModel.deleteTodoById(findItem.id);
             answer = '삭제했음'
             break;
+        case 'summary':
+            const doneList = todos.filter(t=>t.completed);
+            const undoneList = todos.filter(t=>!t.completed);
+            const summary_data_prompt = buildSummaryPrompt(doneList, undoneList);
+            const summaryText = await requestChatGPT(summary_system_prompt, summary_data_prompt);
+            answer = summaryText;
+            console.log(answer);
+            break;
+
+        default:
+            answer= '아직 구현되지 않은 기능입니다.'
     }
 
     return res.send({ answer:`${answer}`});
 });
 
-async function requestChatGPT(userInput){
-    const prompt = `
-    너는 투두리스트에 대응하는 챗봇입니다.
-    그래서 사용자으 질문에 따라 "add", "done", "delete", "deleteall", "alldone"의 액션을 선택할수 있어.
-    답변은 아무런 설명도 없이 json으로만 답변해야해. json 태그 문법도 생략해줘.
+function buildSummaryPrompt(doneList, undoneList){
+    const doneStr = doneList.length > 0
+    ? doneList.map(t=> `- ${t.text}`).join('\n')
+    : '없음';
 
-    답변은 다음의 포맷으로 해줘: {"action":"text", "item":"text"}
+    prompt = `
+    [완료한일]
+    ${doneStr}
 
-    예시) 
-    "모든 일정을 다 완료 처리해줘." => {"action":"alldone"}
-    "숙제 완료했어" => {"action":"done", "item":"숙제"}
-    `;
+    [아직남은일]
+    ${undoneStr}
+    `
+    console.log('[최종프롬프트]:', prompt);
+    return prompt
+}
 
+const summary_system_prompt=`
+당신은 하루를 요약해주느 비서입니다.
+다음 아래 목록을 보고 오늘의 할일을 간결하게 요약해주세요.
+`
+
+const command_prompt = `
+너는 투두리스트에 대응하는 챗봇입니다.
+그래서 사용자으 질문에 따라 "add", "done", "delete", "deleteall", "alldone"의 액션을 선택할수 있어.
+답변은 아무런 설명도 없이 json으로만 답변해야해. json 태그 문법도 생략해줘.
+
+답변은 다음의 포맷으로 해줘: {"action":"text", "item":"text"}
+
+예시) 
+"모든 일정을 다 완료 처리해줘." => {"action":"alldone"}
+"숙제 완료했어" => {"action":"done", "item":"숙제"}
+
+`
+
+async function requestChatGPT(prompt, userInput){
+    
     const response = await openai.chat.completions.create({
         model:'gpt-4o-mini',
         messages:[

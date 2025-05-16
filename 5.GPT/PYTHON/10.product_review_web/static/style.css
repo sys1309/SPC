@@ -1,0 +1,41 @@
+.review-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .rating {
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .random-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .random-image img {
+    max-width: 100%;
+    height: auto;
+  }

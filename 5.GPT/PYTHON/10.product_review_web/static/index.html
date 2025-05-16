@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 후기 등록</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="{{url_for('static',filename=style.css)}}">
+</head>
+<body>
+  <div class="review-form">
+    <h2>상품 후기 작성</h2>
+    <div class="random-image">
+      <img src="https://picsum.photos/500/300" alt="Random Product Image">
+    </div>
+    <form id="reviewForm">
+      <div class="form-group">
+        <label>제목</label>
+        <input type="text" placeholder="후기 제목을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label>평점</label>
+        <div class="rating">
+          <input type="radio" name="rating" value="5"> 5점
+          <input type="radio" name="rating" value="4"> 4점
+          <input type="radio" name="rating" value="3"> 3점
+          <input type="radio" name="rating" value="2"> 2점
+          <input type="radio" name="rating" value="1"> 1점
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>내용</label>
+        <textarea name="review" rows="5" placeholder="상품 후기를 작성해주세요"></textarea>
+      </div>
+
+      <button type="submit">후기 등록</button>
+    </form>
+  </div>
+
+  <div class="ai-review-summary">
+    <h3>AI 상품 후기 요약</h3>
+    <div id="aiSummaryContainer">
+      <!-- AI 요약 내용이 여기에 추가됨 -->
+    </div>
+  </div>
+
+  <div class="review-list">
+    <h3>작성된 후기</h3>
+    <div id="reviewContainer"></div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
