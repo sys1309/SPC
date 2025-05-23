@@ -1,0 +1,101 @@
+id,name,description,area,location,latitude,longitude,rating,review_count,image_url,created_at,style_activity,style_hotplace,style_nature,style_landmark,style_healing,style_culture,style_photo,style_shopping,style_exotic
+1,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,서초구,남산 입구,37.448865,126.927495,5,277,https://www.lorempixel.com/30/656,2023-10-16 05:46:07,False,True,False,True,True,False,False,False,True
+2,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",용산구,DDP 입구,37.514627,126.886218,3,285,https://placekitten.com/124/951,2025-01-03 07:27:47,True,False,True,True,False,True,True,True,True
+3,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,노원구,홍대거리 입구,37.424877,126.892886,4,1425,https://placekitten.com/124/818,2023-12-02 01:07:24,True,False,False,True,True,True,True,True,True
+4,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,종로구,한강공원 입구,37.544352,126.82562,5,1253,https://dummyimage.com/647x162,2025-04-05 18:42:30,True,True,True,False,True,True,False,True,False
+5,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",용산구,창덕궁 입구,37.48052,126.924814,5,863,https://dummyimage.com/18x742,2024-04-05 17:47:04,True,False,False,False,False,True,True,False,False
+6,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,용산구,한강공원 입구,37.577719,126.884411,5,1368,https://dummyimage.com/310x418,2024-11-09 19:57:00,False,True,True,False,False,False,False,True,True
+7,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,마포구,이태원 입구,37.58044,126.825956,5,1985,https://placekitten.com/104/435,2024-08-03 01:10:35,True,False,True,False,True,True,True,False,True
+8,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,노원구,북촌한옥마을 입구,37.517315,126.868374,5,1890,https://placekitten.com/708/761,2025-03-22 01:06:47,True,False,True,False,False,False,True,False,False
+9,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,마포구,북촌한옥마을 입구,37.423859,126.856705,5,673,https://www.lorempixel.com/83/610,2024-01-15 23:40:18,False,True,True,False,False,True,False,False,False
+10,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",은평구,롯데타워 입구,37.430548,127.065246,3,1318,https://placeimg.com/909/622/any,2023-12-19 17:48:19,False,True,True,False,False,True,True,True,False
+11,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",종로구,롯데타워 입구,37.423169,126.988259,5,1935,https://www.lorempixel.com/319/962,2024-07-28 20:29:31,True,True,False,True,True,True,False,True,True
+12,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,송파구,이태원 입구,37.426297,127.078447,4,920,https://dummyimage.com/415x661,2024-11-26 06:29:03,True,False,False,False,False,False,True,True,True
+13,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",성동구,DDP 입구,37.412231,126.844264,3,1004,https://dummyimage.com/64x149,2023-10-23 08:01:04,True,True,True,True,True,False,True,False,True
+14,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",강남구,경복궁 입구,37.508034,126.905013,3,216,https://www.lorempixel.com/514/952,2023-11-28 13:32:02,True,False,False,False,True,True,False,False,True
+15,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",은평구,창덕궁 입구,37.522987,127.023823,5,670,https://placeimg.com/1021/356/any,2024-11-25 20:46:22,False,True,False,True,True,False,False,True,True
+16,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,성동구,이태원 입구,37.581729,126.839835,5,501,https://dummyimage.com/996x520,2025-01-29 20:35:55,False,False,True,False,False,False,True,True,False
+17,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,성동구,N서울타워 입구,37.597786,127.056202,5,415,https://www.lorempixel.com/200/766,2023-11-29 00:56:45,False,False,False,False,False,False,True,True,True
+18,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,중구,북촌한옥마을 입구,37.412111,126.991545,3,926,https://dummyimage.com/394x751,2024-01-29 08:01:25,False,True,True,True,False,True,False,True,False
+19,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",은평구,경복궁 입구,37.418711,127.086609,3,238,https://www.lorempixel.com/881/563,2025-05-04 22:03:50,False,True,False,True,True,False,True,True,False
+20,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,마포구,북촌한옥마을 입구,37.52789,126.928937,5,1152,https://placekitten.com/363/661,2024-07-10 00:29:49,True,False,False,False,True,False,False,True,True
+21,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",종로구,창덕궁 입구,37.454728,126.995931,4,1501,https://placeimg.com/979/690/any,2024-01-10 21:52:59,False,False,False,True,True,True,False,True,True
+22,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",성동구,DDP 입구,37.598353,126.913211,3,466,https://placekitten.com/208/637,2024-04-04 05:18:25,False,False,True,True,False,True,False,False,True
+23,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,마포구,홍대거리 입구,37.442384,127.023085,4,162,https://dummyimage.com/1008x212,2023-11-30 13:02:31,False,False,True,False,True,True,False,False,False
+24,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,은평구,한강공원 입구,37.441011,127.071753,3,436,https://placekitten.com/300/708,2023-06-24 20:42:14,False,False,True,False,False,False,False,True,True
+25,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,강남구,홍대거리 입구,37.55335,127.018204,3,1996,https://placekitten.com/477/14,2024-12-10 18:13:58,True,True,True,False,False,True,False,True,True
+26,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,종로구,북촌한옥마을 입구,37.451584,126.976799,4,44,https://www.lorempixel.com/221/431,2025-01-01 00:14:41,False,False,True,True,True,True,False,True,False
+27,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,은평구,이태원 입구,37.496972,126.870874,5,919,https://www.lorempixel.com/405/761,2024-06-06 08:01:53,True,True,False,True,False,False,False,False,True
+28,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,중구,남산 입구,37.464668,126.904179,3,1278,https://www.lorempixel.com/811/23,2024-12-18 00:43:50,True,True,True,False,False,True,True,True,True
+29,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,강남구,N서울타워 입구,37.591036,126.840493,3,1901,https://placekitten.com/942/97,2024-04-24 03:50:50,True,True,True,True,True,False,False,True,True
+30,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,노원구,홍대거리 입구,37.474847,126.813493,4,719,https://www.lorempixel.com/522/668,2024-08-06 21:25:45,False,False,True,False,False,True,False,True,True
+31,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,송파구,남산 입구,37.479699,126.844812,5,854,https://www.lorempixel.com/261/419,2023-08-16 21:10:18,False,True,True,False,True,False,True,False,False
+32,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,성동구,N서울타워 입구,37.576879,127.058876,5,1351,https://dummyimage.com/956x290,2024-11-22 08:52:53,True,True,True,True,True,False,False,False,True
+33,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,마포구,한강공원 입구,37.530654,126.932215,5,794,https://www.lorempixel.com/824/347,2025-02-12 06:36:41,False,True,True,True,True,False,True,True,True
+34,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",중구,DDP 입구,37.543424,127.049854,5,624,https://dummyimage.com/841x150,2024-10-17 05:01:56,True,True,True,False,True,True,False,True,False
+35,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,종로구,N서울타워 입구,37.594601,126.915211,4,1899,https://www.lorempixel.com/728/771,2024-04-16 19:58:08,False,True,True,True,True,False,False,False,False
+36,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",은평구,DDP 입구,37.49681,126.809908,3,1726,https://placeimg.com/757/737/any,2024-07-12 04:44:23,True,False,False,False,False,False,False,True,False
+37,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",서초구,경복궁 입구,37.469364,126.835554,5,1181,https://dummyimage.com/562x907,2023-10-20 06:14:07,False,False,False,True,False,False,True,False,False
+38,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,성동구,한강공원 입구,37.583645,126.945436,4,1958,https://placeimg.com/825/969/any,2024-10-15 19:10:22,True,False,True,True,True,False,True,False,False
+39,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,중구,N서울타워 입구,37.571746,127.074978,4,319,https://placeimg.com/235/611/any,2024-04-11 06:44:17,False,False,True,False,True,False,True,True,False
+40,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,중구,이태원 입구,37.564575,126.904592,4,1953,https://dummyimage.com/497x518,2024-02-02 09:19:10,False,True,True,True,True,False,True,True,False
+41,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",용산구,경복궁 입구,37.478186,126.890418,5,161,https://dummyimage.com/919x995,2024-05-23 00:27:23,False,False,False,True,True,True,True,True,False
+42,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",서초구,DDP 입구,37.489432,127.097634,3,997,https://www.lorempixel.com/839/893,2024-07-08 13:15:30,True,True,True,True,False,True,False,False,True
+43,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,성동구,N서울타워 입구,37.458641,126.819306,4,1402,https://dummyimage.com/676x318,2024-07-04 19:34:51,False,True,False,False,False,True,True,False,True
+44,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,강남구,홍대거리 입구,37.481476,127.084604,4,797,https://placekitten.com/271/111,2023-07-16 05:41:27,True,True,True,False,True,False,False,True,True
+45,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,용산구,홍대거리 입구,37.56898,127.080226,4,1487,https://dummyimage.com/590x159,2024-09-06 04:06:31,False,True,False,False,False,True,False,True,False
+46,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",성동구,롯데타워 입구,37.433806,126.956297,5,1084,https://dummyimage.com/534x354,2024-10-11 09:06:03,True,True,True,False,True,False,True,True,False
+47,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,마포구,홍대거리 입구,37.507103,126.942087,3,572,https://dummyimage.com/88x43,2024-06-26 08:25:24,True,False,False,True,True,False,True,True,True
+48,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,성동구,홍대거리 입구,37.596262,127.001875,3,712,https://placeimg.com/709/493/any,2024-06-26 14:29:30,True,False,True,True,True,False,False,True,False
+49,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,강남구,홍대거리 입구,37.439646,126.991143,5,312,https://www.lorempixel.com/422/91,2024-05-02 19:51:47,False,True,False,True,False,True,False,True,False
+50,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",은평구,롯데타워 입구,37.47396,126.837903,5,1445,https://placekitten.com/278/457,2025-04-09 00:06:29,True,True,True,False,False,True,True,True,True
+51,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",서초구,DDP 입구,37.510564,126.812618,3,321,https://placeimg.com/128/61/any,2024-07-25 02:02:57,True,False,False,False,False,True,False,True,False
+52,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,송파구,북촌한옥마을 입구,37.452198,126.885112,5,1482,https://www.lorempixel.com/15/247,2024-03-28 04:47:26,True,False,False,True,False,True,False,False,True
+53,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",은평구,롯데타워 입구,37.489908,126.933443,4,1417,https://placekitten.com/295/319,2024-07-22 20:15:49,True,True,False,True,False,False,False,False,False
+54,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,마포구,N서울타워 입구,37.550217,127.066124,4,580,https://placekitten.com/284/136,2023-11-02 15:09:42,True,False,True,False,True,False,False,False,True
+55,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,강남구,한강공원 입구,37.537429,126.923241,4,556,https://dummyimage.com/765x838,2024-03-25 14:43:25,False,False,True,True,False,True,False,True,True
+56,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,중구,북촌한옥마을 입구,37.456079,126.821242,5,840,https://www.lorempixel.com/193/829,2024-11-27 17:47:14,True,False,True,True,False,True,True,False,False
+57,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,마포구,한강공원 입구,37.527004,127.045572,3,1114,https://www.lorempixel.com/613/73,2023-09-28 15:18:14,True,False,True,False,False,True,False,True,True
+58,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,강남구,한강공원 입구,37.521661,127.049948,4,1021,https://www.lorempixel.com/140/199,2023-06-30 14:11:34,True,False,False,True,True,True,False,True,False
+59,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,마포구,N서울타워 입구,37.415888,126.928961,4,813,https://www.lorempixel.com/129/30,2023-06-02 00:57:23,True,False,True,True,False,True,False,True,False
+60,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,강남구,남산 입구,37.555489,126.897475,4,880,https://www.lorempixel.com/340/665,2025-01-20 12:03:00,False,True,False,False,True,True,True,False,False
+61,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",종로구,DDP 입구,37.423358,127.031051,4,736,https://dummyimage.com/669x483,2024-11-16 20:42:56,False,True,True,False,False,True,True,False,False
+62,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,은평구,홍대거리 입구,37.472216,127.062761,5,405,https://placeimg.com/99/949/any,2024-11-15 03:49:21,True,True,True,False,False,False,True,False,True
+63,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,마포구,남산 입구,37.530846,126.821552,4,1613,https://placeimg.com/623/20/any,2023-12-06 11:08:29,False,True,False,False,True,True,True,True,False
+64,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",용산구,롯데타워 입구,37.460485,126.967149,3,1258,https://dummyimage.com/623x970,2023-07-15 10:51:47,False,False,True,False,False,True,True,False,False
+65,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",성동구,DDP 입구,37.458235,126.862973,3,1859,https://placeimg.com/223/205/any,2024-07-26 11:03:10,True,True,True,True,False,True,True,False,True
+66,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",노원구,롯데타워 입구,37.447217,126.853335,4,1826,https://dummyimage.com/567x716,2023-06-23 18:58:20,False,True,True,True,False,True,False,False,True
+67,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",성동구,DDP 입구,37.546736,126.989465,3,588,https://placekitten.com/457/118,2024-06-12 16:36:14,True,False,False,True,False,True,True,True,True
+68,이태원,글로벌 문화가 어우러진 독특한 분위기의 거리입니다.,서초구,이태원 입구,37.448222,126.885592,5,1819,https://placekitten.com/392/1021,2023-09-05 00:39:29,True,True,False,False,True,True,True,True,True
+69,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,송파구,북촌한옥마을 입구,37.452155,126.999072,3,1014,https://placeimg.com/702/430/any,2024-04-09 05:30:58,True,True,True,True,True,True,True,True,False
+70,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",서초구,창덕궁 입구,37.527345,127.069712,3,1895,https://dummyimage.com/884x283,2024-06-21 14:44:32,True,False,False,True,True,True,True,True,False
+71,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",종로구,경복궁 입구,37.412029,127.023874,3,1220,https://placeimg.com/378/761/any,2024-08-29 10:35:24,False,False,False,False,False,False,False,False,False
+72,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,송파구,홍대거리 입구,37.49556,127.086019,4,348,https://placekitten.com/1017/58,2024-12-10 08:28:52,True,True,True,False,False,False,False,False,True
+73,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",송파구,롯데타워 입구,37.468872,126.84168,3,713,https://dummyimage.com/470x210,2024-08-26 12:46:02,True,True,False,True,False,False,True,True,True
+74,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,노원구,홍대거리 입구,37.55208,127.019478,4,47,https://www.lorempixel.com/754/525,2024-01-10 17:50:16,True,False,False,False,True,True,False,False,True
+75,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",중구,창덕궁 입구,37.516585,127.008116,3,966,https://dummyimage.com/437x752,2024-05-23 12:09:20,False,True,True,True,False,False,True,True,True
+76,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,강남구,한강공원 입구,37.454456,126.995401,3,818,https://dummyimage.com/162x535,2024-06-08 09:37:09,True,False,True,True,True,False,True,True,True
+77,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,송파구,남산 입구,37.473869,126.929292,4,1059,https://placekitten.com/320/704,2024-10-26 04:46:42,False,False,True,False,True,False,False,True,True
+78,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,은평구,북촌한옥마을 입구,37.500668,126.86369,3,784,https://www.lorempixel.com/106/531,2023-06-04 01:27:04,True,True,False,False,False,True,False,False,False
+79,남산,서울 중심에서 자연과 도시를 함께 즐길 수 있는 산책 명소입니다.,성동구,남산 입구,37.469217,127.091981,3,324,https://dummyimage.com/647x305,2023-06-14 13:51:09,True,False,True,True,True,True,False,False,True
+80,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",용산구,창덕궁 입구,37.505189,126.909851,3,1101,https://placekitten.com/1005/488,2024-11-08 23:12:08,True,False,False,True,False,False,False,False,True
+81,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",은평구,경복궁 입구,37.433575,127.002068,4,223,https://www.lorempixel.com/328/53,2024-04-26 23:27:05,True,True,False,True,False,True,True,False,True
+82,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",강남구,경복궁 입구,37.451429,126.929586,5,1664,https://placekitten.com/925/371,2023-10-25 15:50:33,False,False,False,False,False,False,False,True,False
+83,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,중구,한강공원 입구,37.448509,126.81715,4,1769,https://placekitten.com/771/1016,2025-05-09 01:05:49,True,False,False,True,True,True,False,True,True
+84,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,송파구,북촌한옥마을 입구,37.549576,126.880088,5,1240,https://dummyimage.com/633x129,2024-12-22 15:49:03,True,True,False,False,True,False,True,False,True
+85,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,중구,N서울타워 입구,37.426727,127.022601,4,1975,https://www.lorempixel.com/834/298,2024-03-21 15:18:40,False,False,True,False,True,True,False,False,True
+86,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,마포구,N서울타워 입구,37.539226,126.840993,4,1379,https://dummyimage.com/411x353,2024-02-17 20:58:24,True,True,False,True,True,True,True,False,True
+87,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",용산구,롯데타워 입구,37.553358,127.000818,5,1703,https://www.lorempixel.com/777/306,2023-10-10 01:36:43,True,False,True,False,True,True,False,False,True
+88,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",송파구,경복궁 입구,37.441711,127.0738,4,1813,https://placekitten.com/53/590,2024-04-04 07:31:47,False,True,False,True,False,True,False,False,False
+89,북촌한옥마을,전통 한옥과 골목길이 어우러진 고즈넉한 마을입니다.,송파구,북촌한옥마을 입구,37.518354,126.899379,5,1921,https://placekitten.com/67/976,2023-06-17 21:07:41,True,False,True,False,False,True,True,False,True
+90,N서울타워,서울의 전경을 한눈에 조망할 수 있는 랜드마크 타워입니다.,종로구,N서울타워 입구,37.511032,126.813534,3,1779,https://placekitten.com/445/759,2023-08-16 16:39:29,True,True,False,False,True,True,True,False,True
+91,DDP,"현대적인 디자인과 전시, 야경으로 유명한 동대문 디자인 플라자입니다.",마포구,DDP 입구,37.516085,127.062155,5,216,https://placekitten.com/36/608,2024-03-17 00:25:34,True,False,False,False,False,True,True,False,True
+92,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",마포구,창덕궁 입구,37.550591,127.091252,5,1704,https://dummyimage.com/294x122,2023-08-06 05:21:39,True,False,True,True,False,True,False,False,True
+93,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",마포구,경복궁 입구,37.516222,127.075507,5,1481,https://dummyimage.com/423x623,2024-03-25 06:09:07,False,True,False,False,True,False,False,False,True
+94,홍대거리,젊은 문화와 예술이 공존하는 핫플레이스입니다.,노원구,홍대거리 입구,37.571548,126.866189,3,1684,https://placeimg.com/413/358/any,2023-12-27 15:13:24,False,False,True,False,False,False,False,True,True
+95,롯데타워,"초고층에서 즐기는 전망과 쇼핑, 다양한 즐길거리가 가득한 공간입니다.",성동구,롯데타워 입구,37.444063,126.980035,5,522,https://placekitten.com/366/671,2024-11-25 23:17:59,True,False,True,True,True,True,True,False,False
+96,한강공원,도심 속 자연과 여유를 즐길 수 있는 힐링 스팟입니다.,중구,한강공원 입구,37.584657,126.962605,5,360,https://dummyimage.com/904x221,2023-07-23 19:42:58,False,False,False,True,False,True,True,True,True
+97,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",은평구,창덕궁 입구,37.443948,126.943842,3,1985,https://placeimg.com/548/397/any,2024-02-18 22:57:52,False,True,False,True,False,False,False,False,True
+98,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",용산구,창덕궁 입구,37.428946,126.911648,3,1882,https://placeimg.com/125/327/any,2024-03-15 05:51:39,True,True,False,False,False,True,True,False,False
+99,경복궁,"조선 시대의 대표 궁궐로, 역사와 전통이 살아 있는 서울의 대표 명소입니다.",성동구,경복궁 입구,37.409354,126.80716,3,1850,https://www.lorempixel.com/643/515,2023-12-22 00:28:17,True,False,False,True,False,False,False,True,True
+100,창덕궁,"아름다운 후원이 있는 조선 시대 궁궐로, 유네스코 세계문화유산입니다.",노원구,창덕궁 입구,37.515885,127.039848,5,1074,https://dummyimage.com/521x134,2024-01-21 21:24:03,True,False,True,True,True,False,True,False,True

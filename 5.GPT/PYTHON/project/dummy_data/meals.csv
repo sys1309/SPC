@@ -1,0 +1,101 @@
+id,name,food_type,location,latitude,longitude,price_level,rating,review_count,image_url,created_at,style_date,style_business,style_anniversary,style_team,style_family,style_view,style_meeting,style_quiet,style_modern,style_traditional
+1,김이이 맛집,퓨전,성수동,37.452811,126.910474,1,5,114,https://www.lorempixel.com/370/175,2024-05-24 14:21:17,True,True,True,True,True,True,False,True,False,False
+2,주식회사 심 맛집,중식,종로구,37.412849,126.895476,1,4,155,https://www.lorempixel.com/249/513,2024-11-27 07:55:57,False,False,True,True,True,False,True,False,True,False
+3,김한김 맛집,카페,건대,37.42427,127.028204,4,1,855,https://placekitten.com/840/285,2024-06-21 18:27:45,True,True,True,False,False,False,True,False,True,True
+4,(주) 강김김 맛집,양식,건대,37.473856,127.065783,1,2,976,https://placeimg.com/699/798/any,2025-02-08 00:53:48,True,False,True,False,False,True,True,False,True,False
+5,서김송 맛집,한식,성수동,37.440925,126.860677,3,1,727,https://placekitten.com/41/163,2025-04-22 11:20:01,False,False,False,True,False,True,False,True,True,True
+6,주식회사 김 맛집,중식,잠실,37.583723,127.066882,3,1,405,https://placeimg.com/308/464/any,2024-11-29 23:51:33,False,False,True,True,False,False,True,True,False,True
+7,송김김 맛집,퓨전,성수동,37.451951,127.031726,1,1,550,https://placeimg.com/63/354/any,2025-04-04 01:41:14,False,True,True,True,True,False,False,False,True,False
+8,유한회사 류오이 맛집,한식,강남구,37.452008,126.834945,1,1,947,https://www.lorempixel.com/334/509,2024-08-29 07:50:14,False,False,True,True,False,False,True,False,False,False
+9,(주) 이 맛집,양식,종로구,37.497722,126.839963,4,3,174,https://www.lorempixel.com/449/534,2024-05-20 16:52:30,False,False,True,False,True,False,True,False,False,False
+10,서하 맛집,퓨전,을지로,37.510397,126.869218,2,3,273,https://dummyimage.com/985x78,2024-11-04 22:41:54,True,False,False,True,False,True,True,True,True,True
+11,최이 맛집,양식,건대,37.562284,126.804882,1,3,789,https://www.lorempixel.com/817/397,2024-07-07 00:48:44,False,False,True,True,False,True,True,False,False,True
+12,주식회사 이 맛집,양식,종로구,37.541565,126.846287,4,3,929,https://dummyimage.com/410x990,2025-01-06 02:53:43,False,False,True,True,True,False,False,True,True,True
+13,주식회사 윤 맛집,중식,을지로,37.584035,126.852327,3,2,603,https://dummyimage.com/275x294,2025-01-02 23:40:34,True,False,True,False,True,False,True,True,True,False
+14,(유) 권이안 맛집,퓨전,이태원,37.574865,126.806922,2,3,53,https://placekitten.com/224/606,2025-04-20 18:25:06,False,True,False,False,False,True,True,True,False,False
+15,김장 맛집,카페,강남구,37.585163,127.062325,2,2,410,https://placekitten.com/883/454,2025-04-29 16:07:21,True,True,False,True,False,False,True,True,False,True
+16,유한회사 김 맛집,일식,홍대,37.487132,126.993113,3,2,927,https://placeimg.com/601/108/any,2024-10-01 15:49:25,True,True,False,False,False,False,True,True,False,False
+17,이이류 맛집,양식,홍대,37.479825,126.902799,1,5,430,https://placeimg.com/533/525/any,2024-10-31 13:10:56,False,False,True,True,True,False,False,False,True,False
+18,주식회사 김 맛집,양식,성수동,37.572521,127.080505,2,1,943,https://dummyimage.com/4x974,2024-05-23 17:54:03,True,True,False,True,False,True,True,False,True,False
+19,윤김 맛집,일식,성수동,37.575044,127.066943,2,4,117,https://www.lorempixel.com/872/714,2024-10-07 14:52:57,True,True,False,True,True,False,False,False,False,False
+20,손박 맛집,양식,건대,37.41383,126.835068,2,2,523,https://dummyimage.com/716x656,2024-06-16 21:41:18,True,True,True,True,False,True,False,True,False,True
+21,김민 맛집,한식,이태원,37.421354,126.956988,1,2,619,https://placeimg.com/70/670/any,2024-12-24 21:44:42,True,True,True,True,True,False,True,False,True,True
+22,유한회사 장권권 맛집,카페,삼청동,37.559532,127.016489,1,3,741,https://placekitten.com/941/987,2024-09-07 23:26:42,False,False,False,False,False,False,False,False,False,False
+23,김박 맛집,퓨전,이태원,37.53759,126.926937,1,4,909,https://dummyimage.com/636x499,2024-10-22 15:11:08,True,True,True,True,True,True,False,False,True,False
+24,유한회사 김 맛집,중식,을지로,37.572551,127.031536,2,2,877,https://dummyimage.com/102x911,2024-07-12 07:55:29,True,False,True,False,True,False,True,True,False,True
+25,(주) 최하황 맛집,일식,잠실,37.437815,126.837887,3,2,302,https://placekitten.com/984/21,2024-08-27 22:49:40,False,False,False,True,False,False,False,True,True,True
+26,주식회사 문배성 맛집,한식,이태원,37.570328,126.906585,1,1,761,https://www.lorempixel.com/924/968,2025-04-14 13:44:19,False,True,False,True,True,True,True,True,True,False
+27,고김 맛집,중식,홍대,37.467285,126.958133,4,4,811,https://placeimg.com/195/877/any,2025-04-27 16:45:30,False,True,True,False,True,True,False,False,True,True
+28,차김박 맛집,카페,종로구,37.418056,126.917101,1,4,653,https://www.lorempixel.com/96/253,2025-05-19 02:22:17,False,False,True,False,False,False,False,True,True,False
+29,김안 맛집,카페,건대,37.591261,126.888064,2,5,289,https://www.lorempixel.com/910/444,2024-10-26 08:56:03,True,False,False,False,True,False,True,True,True,False
+30,김박김 맛집,양식,합정,37.494502,126.836941,4,5,405,https://placeimg.com/518/447/any,2025-05-15 18:36:59,False,True,True,True,True,True,True,True,True,False
+31,주식회사 박 맛집,디저트,종로구,37.546818,126.924239,1,3,155,https://placekitten.com/129/707,2025-02-24 18:12:06,False,True,False,False,False,False,False,True,False,False
+32,(주) 이박박 맛집,일식,이태원,37.401784,126.974017,3,4,495,https://dummyimage.com/799x850,2025-01-05 18:39:41,True,False,True,False,True,False,True,True,False,False
+33,김김 맛집,카페,삼청동,37.447379,126.989772,1,5,644,https://placekitten.com/618/971,2025-01-17 14:33:41,False,False,False,True,True,False,True,False,True,True
+34,주식회사 허 맛집,중식,합정,37.431092,126.920906,2,4,555,https://placeimg.com/596/949/any,2025-02-26 01:57:38,False,False,False,True,False,False,True,True,False,False
+35,한최이 맛집,일식,홍대,37.590002,126.879686,4,2,333,https://placeimg.com/590/970/any,2024-07-29 13:56:00,True,False,False,True,True,True,False,True,False,False
+36,유한회사 우 맛집,중식,종로구,37.446774,126.805044,4,2,437,https://www.lorempixel.com/206/489,2025-04-20 12:36:39,False,True,False,False,True,True,True,True,False,True
+37,곽김 맛집,퓨전,합정,37.40287,127.017128,1,3,593,https://placeimg.com/886/840/any,2025-02-21 19:19:39,False,False,False,True,False,False,True,True,True,True
+38,유한회사 이 맛집,양식,삼청동,37.439574,126.895385,1,4,461,https://placekitten.com/22/49,2024-11-30 12:44:51,True,True,False,False,True,False,True,True,True,False
+39,(유) 박 맛집,한식,이태원,37.543074,126.907296,2,2,792,https://dummyimage.com/761x63,2024-07-21 00:04:06,False,False,False,True,False,True,False,True,False,True
+40,(주) 지조진 맛집,일식,을지로,37.425166,127.017403,2,1,291,https://www.lorempixel.com/662/955,2024-08-30 19:41:08,False,True,True,False,False,True,False,True,False,False
+41,유한회사 이이윤 맛집,한식,홍대,37.546445,126.886806,3,2,956,https://placekitten.com/596/692,2024-11-26 23:59:22,True,True,False,False,False,False,False,False,False,False
+42,김박장 맛집,퓨전,강남구,37.491662,126.869199,4,5,946,https://placeimg.com/895/766/any,2025-03-07 06:10:07,False,False,False,False,False,True,False,True,False,True
+43,배김 맛집,퓨전,삼청동,37.404736,127.058902,3,3,262,https://placekitten.com/851/997,2024-10-23 04:48:53,True,False,True,False,False,False,False,False,True,False
+44,한김 맛집,양식,삼청동,37.560774,126.867813,1,5,430,https://dummyimage.com/363x1015,2024-10-24 14:06:27,True,True,True,True,True,True,True,False,False,False
+45,오이문 맛집,퓨전,종로구,37.409973,127.052722,4,4,220,https://placekitten.com/739/28,2024-07-26 23:19:45,True,True,True,False,False,True,False,True,False,True
+46,박김 맛집,일식,강남구,37.58175,127.048548,2,4,41,https://www.lorempixel.com/740/493,2024-07-25 14:39:55,False,False,False,True,False,False,True,False,True,False
+47,(주) 전이이 맛집,한식,건대,37.54516,126.98387,4,1,865,https://www.lorempixel.com/85/484,2024-07-27 14:07:17,False,True,False,False,True,True,False,True,True,True
+48,이강 맛집,일식,홍대,37.412889,127.02644,3,2,450,https://dummyimage.com/518x90,2024-12-22 03:20:18,False,True,False,False,True,True,True,False,False,False
+49,김박박 맛집,카페,을지로,37.494631,126.831883,1,5,550,https://placekitten.com/484/27,2024-10-21 16:38:04,False,False,False,False,False,False,False,True,True,False
+50,최장 맛집,카페,건대,37.561524,127.074392,1,3,895,https://placekitten.com/518/18,2025-01-26 00:08:21,False,False,False,False,False,False,True,False,False,True
+51,(주) 지 맛집,양식,을지로,37.436237,126.893632,1,1,598,https://dummyimage.com/617x258,2024-07-07 07:00:31,True,True,True,False,True,False,True,True,True,True
+52,주식회사 이이장 맛집,디저트,합정,37.572429,126.924488,2,1,374,https://placekitten.com/538/122,2025-03-07 16:52:59,False,True,False,True,False,True,False,False,True,False
+53,(유) 김 맛집,카페,건대,37.489209,126.809407,1,3,791,https://dummyimage.com/1013x563,2025-05-16 17:29:06,False,False,False,True,True,False,True,True,True,True
+54,이김 맛집,퓨전,건대,37.58918,126.815585,1,4,765,https://dummyimage.com/814x137,2025-01-27 00:39:22,True,False,True,False,True,False,False,False,False,True
+55,이박 맛집,퓨전,이태원,37.534929,126.958615,3,3,584,https://dummyimage.com/249x472,2024-05-23 04:25:11,False,False,True,False,False,True,False,True,True,False
+56,김한김 맛집,한식,홍대,37.425999,126.870097,3,5,851,https://placekitten.com/947/658,2024-07-23 19:47:41,False,False,False,True,True,True,False,True,False,False
+57,우송 맛집,중식,종로구,37.519471,127.054017,4,3,767,https://placeimg.com/370/156/any,2025-03-23 11:58:33,True,False,False,True,True,False,False,False,True,False
+58,유한회사 민 맛집,퓨전,건대,37.492017,127.0015,4,3,426,https://www.lorempixel.com/748/928,2024-08-30 07:04:26,False,True,True,True,True,False,False,True,True,False
+59,장김 맛집,퓨전,강남구,37.588004,126.911969,2,1,36,https://placekitten.com/891/596,2024-06-09 06:24:56,False,True,False,False,False,False,True,True,False,False
+60,주식회사 배박이 맛집,한식,홍대,37.529595,126.942834,1,1,806,https://dummyimage.com/155x1010,2024-10-01 07:45:40,True,True,True,False,True,False,False,True,True,True
+61,주식회사 김 맛집,퓨전,삼청동,37.518302,127.024662,2,3,991,https://placeimg.com/456/503/any,2025-04-12 18:00:37,True,True,True,False,True,True,True,False,False,True
+62,(주) 장김성 맛집,일식,잠실,37.411742,126.8839,3,4,978,https://www.lorempixel.com/978/915,2024-12-09 11:22:16,True,False,False,False,False,True,True,True,False,False
+63,주식회사 박 맛집,한식,강남구,37.459118,127.013939,1,2,226,https://www.lorempixel.com/250/843,2025-03-01 05:11:23,True,False,False,False,True,False,False,True,False,False
+64,박이 맛집,양식,삼청동,37.558038,126.886749,2,2,854,https://dummyimage.com/569x788,2024-09-28 21:32:54,False,False,True,True,False,False,False,False,False,True
+65,이이황 맛집,퓨전,삼청동,37.460287,126.981903,2,2,852,https://placekitten.com/741/270,2024-10-20 20:18:35,True,False,True,True,False,True,True,False,False,True
+66,(주) 박 맛집,카페,홍대,37.53633,127.019229,2,5,128,https://placeimg.com/191/904/any,2024-10-20 06:13:20,True,False,False,True,False,True,True,True,False,True
+67,주식회사 안송문 맛집,한식,을지로,37.552483,126.981244,1,2,990,https://www.lorempixel.com/533/249,2025-03-29 20:34:52,True,True,False,True,False,True,False,True,True,True
+68,강김김 맛집,양식,이태원,37.530589,126.857957,2,1,518,https://placekitten.com/292/473,2024-08-23 21:08:35,False,False,True,True,False,False,False,True,True,True
+69,유한회사 이이백 맛집,퓨전,잠실,37.413171,126.981825,4,3,285,https://placeimg.com/337/354/any,2025-05-09 23:25:22,False,True,True,False,True,True,True,True,False,False
+70,(주) 최 맛집,일식,이태원,37.427139,127.024303,1,5,370,https://www.lorempixel.com/442/359,2025-03-14 01:30:35,True,True,True,False,False,True,True,True,False,True
+71,장강 맛집,중식,을지로,37.440692,126.879731,1,5,332,https://dummyimage.com/573x786,2025-05-13 22:22:56,True,False,False,True,True,True,True,False,False,True
+72,유한회사 최 맛집,일식,성수동,37.406471,127.037061,2,3,302,https://placeimg.com/711/410/any,2024-08-03 07:46:38,True,True,False,False,False,True,True,False,False,False
+73,곽김 맛집,일식,을지로,37.520254,127.048248,3,5,937,https://dummyimage.com/527x184,2025-04-01 19:00:31,False,True,False,True,False,False,True,False,False,True
+74,김노김 맛집,일식,강남구,37.448266,126.861598,1,4,101,https://placeimg.com/200/556/any,2024-11-27 09:10:44,True,False,False,False,True,False,True,False,True,False
+75,유한회사 이 맛집,중식,을지로,37.547487,127.043069,2,3,745,https://dummyimage.com/952x70,2024-11-18 11:35:43,False,True,True,False,False,False,False,False,True,True
+76,최김 맛집,중식,을지로,37.473968,127.069054,3,4,107,https://www.lorempixel.com/335/369,2025-02-23 13:41:58,True,False,False,False,False,False,False,True,True,False
+77,(주) 손 맛집,양식,종로구,37.408778,127.071281,2,1,975,https://dummyimage.com/55x532,2025-03-10 21:03:00,True,False,True,False,True,False,True,False,True,True
+78,이김 맛집,한식,강남구,37.505709,126.860442,3,5,558,https://placeimg.com/8/446/any,2024-12-21 08:48:16,True,False,True,False,False,True,True,False,False,False
+79,유한회사 장 맛집,한식,합정,37.492971,127.037702,2,5,273,https://placeimg.com/857/202/any,2024-12-10 11:13:06,False,False,False,False,True,True,False,True,True,True
+80,김김김 맛집,중식,강남구,37.561991,127.070214,3,2,318,https://placeimg.com/462/787/any,2024-11-13 14:49:24,True,False,False,False,False,True,True,False,True,True
+81,(주) 박 맛집,중식,합정,37.411892,126.922989,4,3,55,https://placeimg.com/993/402/any,2025-01-31 16:25:45,False,True,False,False,False,False,True,True,True,True
+82,최이배 맛집,중식,합정,37.439667,126.980143,4,3,120,https://dummyimage.com/188x297,2024-11-25 02:04:33,False,True,True,False,True,False,True,True,True,True
+83,유한회사 문최이 맛집,퓨전,종로구,37.413504,127.067856,3,4,879,https://www.lorempixel.com/642/350,2025-02-26 10:30:04,False,True,False,False,True,False,False,False,False,True
+84,정유이 맛집,디저트,잠실,37.486647,126.910925,1,1,166,https://dummyimage.com/852x382,2025-05-11 00:12:32,False,False,True,True,True,True,True,False,False,False
+85,양남 맛집,퓨전,강남구,37.410003,127.072175,3,5,417,https://www.lorempixel.com/892/81,2024-07-16 07:22:30,True,True,False,True,False,False,True,False,True,True
+86,손송백 맛집,디저트,종로구,37.506203,126.90062,2,2,188,https://www.lorempixel.com/797/94,2024-11-27 21:54:40,True,True,True,False,True,True,True,False,False,False
+87,주식회사 김박최 맛집,중식,삼청동,37.584074,127.059664,2,5,132,https://dummyimage.com/118x287,2025-01-09 13:05:48,True,True,True,False,False,True,True,False,False,True
+88,김장 맛집,일식,종로구,37.485316,126.897057,2,2,989,https://www.lorempixel.com/436/1009,2024-09-23 08:26:21,False,False,False,True,False,False,True,False,False,True
+89,김이 맛집,카페,합정,37.553468,126.825161,4,5,146,https://dummyimage.com/105x557,2025-02-14 17:24:00,False,True,False,True,True,True,True,False,False,False
+90,김한김 맛집,일식,이태원,37.452418,126.997915,2,1,71,https://www.lorempixel.com/361/384,2025-02-23 16:24:45,True,True,True,False,True,True,False,True,True,False
+91,김조이 맛집,일식,성수동,37.512998,126.842484,3,3,61,https://placekitten.com/159/368,2024-10-02 00:17:33,False,True,True,True,True,True,True,False,True,False
+92,김이 맛집,한식,건대,37.466533,126.894295,3,4,208,https://dummyimage.com/350x885,2024-09-23 05:50:39,False,False,False,False,False,True,False,False,True,True
+93,이이김 맛집,카페,삼청동,37.554821,126.966099,4,5,991,https://dummyimage.com/822x559,2024-12-30 11:00:06,False,False,True,False,True,False,True,True,True,False
+94,주식회사 김 맛집,한식,건대,37.440624,127.041259,1,5,253,https://placeimg.com/722/116/any,2024-07-15 08:12:20,False,False,True,True,True,False,True,False,True,False
+95,(주) 김이김 맛집,양식,이태원,37.519926,126.997003,3,1,975,https://placekitten.com/922/683,2024-10-30 19:42:14,True,True,False,False,True,True,False,False,False,False
+96,유한회사 이 맛집,퓨전,합정,37.508266,127.01152,2,4,359,https://placeimg.com/718/1016/any,2024-08-26 06:04:31,False,False,False,False,False,True,True,True,False,True
+97,(유) 최박김 맛집,한식,삼청동,37.532814,127.047347,2,2,178,https://placekitten.com/683/550,2024-06-06 14:50:57,True,True,False,True,True,True,False,True,True,True
+98,안김 맛집,한식,성수동,37.483337,126.807571,4,4,590,https://placekitten.com/509/315,2025-04-20 13:03:21,False,True,False,True,True,False,False,True,True,False
+99,유한회사 김서문 맛집,중식,합정,37.483077,127.005623,1,5,796,https://dummyimage.com/734x302,2024-08-27 23:53:31,True,True,False,False,False,True,True,False,False,True
+100,이김백 맛집,양식,을지로,37.439416,126.800959,4,1,336,https://placeimg.com/149/763/any,2024-10-06 23:27:13,True,False,True,False,False,False,False,False,False,False
